@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f06c6115-c451-49d3-b2c2-f37b9dabfde4/deploy-status)](https://app.netlify.com/sites/lively-sprinkles-c55588/deploys)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
