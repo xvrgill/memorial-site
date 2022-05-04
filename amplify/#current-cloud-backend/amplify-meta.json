@@ -1,0 +1,73 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-memorialsite-dev-34133-authRole",
+      "UnauthRoleArn": "arn:aws:iam::401169483643:role/amplify-memorialsite-dev-34133-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::401169483643:role/amplify-memorialsite-dev-34133-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-memorialsite-dev-34133-deployment",
+      "UnauthRoleName": "amplify-memorialsite-dev-34133-unauthRole",
+      "StackName": "amplify-memorialsite-dev-34133",
+      "StackId": "arn:aws:cloudformation:us-east-1:401169483643:stack/amplify-memorialsite-dev-34133/751f91d0-cab4-11ec-b553-121d8605c1c9",
+      "AmplifyAppId": "d3fusuya26uan4"
+    }
+  },
+  "auth": {
+    "memorialsite5db794e5": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-memorialsite-dev-34133-deployment/amplify-cfn-templates/auth/memorialsite5db794e5-cloudformation-template.json",
+        "logicalId": "authmemorialsite5db794e5"
+      },
+      "lastPushTimeStamp": "2022-05-03T08:35:13.664Z",
+      "output": {
+        "UserPoolId": "us-east-1_D5eycOyGe",
+        "AppClientIDWeb": "1p6dkjujjhegb9ml3v0kfmttqq",
+        "AppClientID": "7hir0k5quf66kheim4pkf7i8nu",
+        "IdentityPoolId": "us-east-1:b88c4b47-f241-4447-8485-9a4c703bb2fb",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:401169483643:userpool/us-east-1_D5eycOyGe",
+        "IdentityPoolName": "memorialsite5db794e5_identitypool_5db794e5__dev",
+        "UserPoolName": "memorialsite5db794e5_userpool_5db794e5"
+      },
+      "lastPushDirHash": "XDUwRHpllDnaetGKXXz4kG1PajQ="
+    }
+  },
+  "storage": {
+    "s3ab6dfa6d": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2022-05-03T08:35:13.842Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-memorialsite-dev-34133-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages3ab6dfa6d"
+      },
+      "output": {
+        "BucketName": "memorialsiteff04753a871945f28d774c40429a973934133-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "Bxke+n6+0PlFl9mKWqYU0XzsHP0="
+    }
+  }
+}
