@@ -52,4 +52,9 @@ code {
   margin: 10px;
 }
 
+#gallery-container {
+  width: 50px;
+  padding: 0%, 10%;
+}
+
 
