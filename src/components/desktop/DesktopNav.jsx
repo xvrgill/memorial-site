@@ -9,7 +9,6 @@ const DesktopNav = () => {
       <Stack sx={{ padding: '5% 10%' }} direction="row" justifyContent="flex-end" alignItems="center" spacing={4}>
         <Link className='desktop-nav-link' to="/">Home</Link>
         <Link className='desktop-nav-link' to="/eulogy">Eulogy</Link>
-        <Link className='desktop-nav-link' to="/service">Service</Link>
         <Link className='desktop-nav-link' to="/gallery">Gallery</Link>
         <Button as={Link} to="/download" variant="outlined">Download Program</Button>
       </Stack>
