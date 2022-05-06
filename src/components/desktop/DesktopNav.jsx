@@ -6,11 +6,11 @@ import Button from '@mui/material/Button'
 const DesktopNav = () => {
   return (
     <nav id="nav-desktop">
-      <Stack direction="row" justifyContent="flex-end" alignItems="center" spacing={4}>
-        <Link to="/">Home</Link>
-        <Link to="/eulogy">Eulogy</Link>
-        <Link to="/service">Service</Link>
-        <Link to="/gallery">Gallery</Link>
+      <Stack sx={{ padding: '5% 10%' }} direction="row" justifyContent="flex-end" alignItems="center" spacing={4}>
+        <Link className='desktop-nav-link' to="/">Home</Link>
+        <Link className='desktop-nav-link' to="/eulogy">Eulogy</Link>
+        <Link className='desktop-nav-link' to="/service">Service</Link>
+        <Link className='desktop-nav-link' to="/gallery">Gallery</Link>
         <Button as={Link} to="/download" variant="outlined">Download Program</Button>
       </Stack>
       <Outlet />

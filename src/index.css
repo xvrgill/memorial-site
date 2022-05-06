@@ -1,55 +1,80 @@
 h1 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-weight: bolder;
-  font-size: 2em;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-size: 2.5em;
+}
+
+h1 .bolder-title {
+  font-weight: 800;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Mullish", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.service-container-item-left {
+  padding: 4% 5% 4% 10%;
+  /* flex: .8; */
+}
+
+.service-container-item-right {
+  flex: 0.9;
+}
+
+.bg-box {
+  width: 100%;
+  background-color: #e5dac7;
+  /* opacity: 0.2; */
+  height: 100%;
+  padding-top: 10%;
+  padding-left: 10%;
 }
 
 .date-text {
   font-style: italic;
 }
 
-
-
 #nav-mobile {
   display: flex;
   justify-content: right;
-  padding: 5% 5% 5% 0%;
+  padding: 2% 4% 2% 0%;
 }
 
-#hero {
-  position: relative;
-  min-height: 500px;
-  background-color: aquamarine;
+#service-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  height: 300px;
+  justify-content: space-between;
 }
+
+/* #service-container > div {
+  flex: 1;
+} */
 
 #hero-text-container {
-  background-color: beige;
-  position: absolute;
-  min-width: 80%;
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
-#hero-text-container p {
-  font-size: 1.125em;
-  margin: 10px;
+.mini-title {
+  /* font-size: 1.125em; */
+  font-family: "Mulish", sans-serif;
+  /* margin-top: 0px; */
 }
 
 #gallery-container {
@@ -57,4 +82,150 @@ code {
   padding: 0%, 10%;
 }
 
+.container {
+  padding: 10%;
+}
 
+#service-page-button {
+  width: 30%;
+  height: 0;
+  padding-bottom: min(30%, 140px);
+  max-width: 140px;
+  background-color: #d1be9c;
+  /* opacity: 0.6; */
+  border: none;
+}
+
+#service-page-button:hover {
+  /* background-color: #AA998F; */
+  opacity: 1;
+}
+
+#service-button-icon-container {
+  margin-top: 50%;
+  transform: translate(0%, -25%);
+}
+
+.emphasis-rectangle {
+  width: 7em;
+  height: 0.2em;
+  background-color: black;
+}
+
+/* .black-border-thin {
+  border: 0.01rem solid black;
+} */
+
+/* .image-card {
+  min-width: 200px;
+  max-width: 700px;
+  width: 100%
+  height: 
+} */
+.image-card {
+  padding: 10% 10%;
+  height: auto;
+  width: 80%;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.image-card-content {
+  padding: 5%;
+}
+
+/* .cropped-image-container {
+  padding: 10%;
+} */
+
+.cropped-image-container img {
+  width: 100%;
+  
+}
+
+.overlap-parent {
+  position: relative;
+}
+
+.overlap-child {
+  position: absolute;
+}
+
+.child-1 {
+  top: -10%;
+  left: -10%;
+}
+
+.child-1 h2 {
+  margin: 0;
+  font-size: 20vw;
+  font-style: italic;
+  color: #D1BE9C;
+  -webkit-text-stroke-width: 0.1rem;
+  /* -webkit-text-stroke-color: #AA998F; */
+  text-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.child-2 {
+  width: 35vw;
+  bottom: 15%;
+  right: -10%;
+  background-color: rgba(229, 218, 199, .99);
+  padding: 2.5vw;
+  fill-opacity: 0;
+}
+
+.child-2 p {
+  font-size: 2vw;
+  color: #2A2113;
+  margin: 0;
+}
+
+.child-3 {
+  /* width: 50vw; */
+  bottom: 5%;
+  right: -5%
+}
+
+/* .child-3 PrimaryButton {
+  font-size: 2vh;
+  color: white;
+} */
+
+.pdf-page-container {
+  padding: 10%;
+  /* width: 100%; */
+}
+
+.pdf-child-1 {
+  bottom: -10vw;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.pdf-page-container img {
+  max-width: 100%;
+}
+
+.service-info-text-group {
+  padding: .2vw 0;
+
+}
+
+.service-info-text-group h3 {
+   margin-bottom: 0px;
+}
+.service-info-text-group p {
+   margin-top: 15px;
+   font-weight: 100;
+   /* font-style:   ; */
+}
+
+.desktop-nav-link {
+  text-decoration: none;
+  font-size: 1.8vw;
+  color: #2A2113;
+  font-weight: 500;
+}

@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Link, Outlet } from 'react-router-dom';
+// import PDF from '../../assets/celebration_of_life.pdf'
 
 
 const MobileNav = () => {
@@ -39,10 +40,8 @@ const MobileNav = () => {
                     }}
                 >
                     <MenuItem as={Link} to="/" onClick={handleClose}>Home</MenuItem>
-                    <MenuItem as={Link} to="/service" onClick={handleClose}>Service</MenuItem>
                     <MenuItem as={Link} to="/eulogy" onClick={handleClose}>Eulogy</MenuItem>
                     <MenuItem as={Link} to="/gallery" onClick={handleClose}>Gallery</MenuItem>
-                    <MenuItem as={Link} to="/download" onClick={handleClose}>Download the Program</MenuItem>
                 </Menu>
             </div>
             <Outlet />

@@ -4,10 +4,12 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import HomePage from './routes/HomePage';
+import EulogyPage from './routes/EulogyPage'
 import reportWebVitals from './reportWebVitals';
 import GalleryPage from './routes/GalleryPage'
 import Amplify from 'aws-amplify'
 import awsconfig from './aws-exports'
+import DownloadPage from './routes/DownloadPage';
 
 Amplify.configure(awsconfig);
 
@@ -18,10 +20,10 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<HomePage />} />
-        <Route path="eulogy" element={<GalleryPage />} />
+        <Route path="eulogy" element={<EulogyPage />} />
         <Route path="service" element={<GalleryPage />} />
         <Route path="gallery" element={<GalleryPage />} />
-        <Route path="download" element={<GalleryPage />} />
+        <Route path="download" element={<DownloadPage />} />
       </Route>
     </Routes>
   </Router>
