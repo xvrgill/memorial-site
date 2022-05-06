@@ -3,7 +3,7 @@ import React from 'react'
 
 const Header = () => {
 
-  
+  // TODO: add a set of two images to the header element
 
   return (
     <header id="hero" className='container'>

@@ -42,6 +42,7 @@ const MobileNav = () => {
                     <MenuItem as={Link} to="/" onClick={handleClose}>Home</MenuItem>
                     <MenuItem as={Link} to="/eulogy" onClick={handleClose}>Eulogy</MenuItem>
                     <MenuItem as={Link} to="/gallery" onClick={handleClose}>Gallery</MenuItem>
+                    <MenuItem as={Link} to="/download" onClick={handleClose}>Download the Program</MenuItem>
                 </Menu>
             </div>
             <Outlet />

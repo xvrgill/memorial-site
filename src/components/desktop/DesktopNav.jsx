@@ -10,7 +10,7 @@ const DesktopNav = () => {
         <Link className='desktop-nav-link' to="/">Home</Link>
         <Link className='desktop-nav-link' to="/eulogy">Eulogy</Link>
         <Link className='desktop-nav-link' to="/gallery">Gallery</Link>
-        <Button as={Link} to="/download" variant="outlined">Download Program</Button>
+        <Button as={Link} to="/download" variant="outlined" sx={{ backgroundColor:'black', color:'white', fontSize:'1.8vw', fontWeight: 500, border: 'solid, 1rem'}}>Download Program</Button>
       </Stack>
       <Outlet />
     </nav>

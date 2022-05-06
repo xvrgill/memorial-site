@@ -10,7 +10,7 @@ const EulogyPage = () => {
   return (
     <div>
       <EulogyParagraph imagePath={path1} alt={alt1} paragraphText={paragraph1} />
-      <div className="eulogy-paragraph-container" style={{ padding: '0 10%', marginTop:'0'}}>
+      <div className="eulogy-paragraph-container" style={{ padding: '0 10%', marginTop:'3vw'}}>
         <p>
           After completing an internship in Boston, Doc Petersen returned to St. Croix, where he first worked with the Department of Agriculture, then was recruited by the venerable Dr. Crago of Crago Animal Clinic in LaGrande Princesse. He eventually assumed ownership of the clinic, practiced for 25 years, and established himself as a kind and compassionate doctor, going above and beyond for his patients.
         </p>
