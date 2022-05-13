@@ -13,7 +13,7 @@ const DownloadPage = () => {
                     <PrimaryButton path='/download' variant='contained' buttonText='Download the Program' styles={{ padding: '2vw', border: 'solid .3rem #E5DAC7', backgroundColor: 'white', fontFamily: 'Mullish', fontSize: '2vw', color: 'black', textDecoration: 'none', boxShadow: 'none', borderRadius: '0px', fontWeight: 'thin' }} />
                 </div> */}
             </div>
-            <a href={PDF} target='_blank' rel="noopener noreferrer">Download the pdf</a>
+            <a href={PDF} style={{ fontSize:'5vw' }} target='_blank' rel="noopener noreferrer">Download the pdf</a>
         </div>
     )
 }

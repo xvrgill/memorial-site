@@ -22,8 +22,8 @@ root.render(
         <Route index element={<HomePage />} />
         <Route path="eulogy" element={<EulogyPage />} />
         <Route path="service" element={<GalleryPage />} />
-        <Route path="gallery" element={<GalleryPage />} />
-        <Route path="download" element={<DownloadPage />} />
+        <Route path="gallery" exact element={<GalleryPage />} />
+        <Route path="download" exact element={<DownloadPage />} />
       </Route>
     </Routes>
   </Router>
